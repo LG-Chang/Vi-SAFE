@@ -10,10 +10,8 @@ pip install -r requirements.txt
 ```
 
 ### Download Model Weights
-```bash
-# YOLOv8 weights (auto-download on first use)
-wget https://github.com/ultralytics/assets/releases/download/v0.0.0/yolov8n.pt
-```
+
+https://github.com/ultralytics/assets/releases
 
 ### Data Structure
 ```
