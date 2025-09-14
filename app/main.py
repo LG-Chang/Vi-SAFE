@@ -291,12 +291,11 @@ def train(args):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     # 数据 & 路径
-    parser.add_argument('--rwf2000_root', type=str, default="/root/autodl-tmp/RWF-2000",
+    parser.add_argument('--rwf2000_root', type=str,
                         help="RWF-2000 数据集路径")
     parser.add_argument('--mmaction_cfg', type=str,
-                        default="/root/autodl-tmp/yolotsn/mmaction2/configs/recognition/tsn/tsn_imagenet-pretrained-r50_8xb32-1x1x3-100e_kinetics400-rgb.py",
                         help="mmaction2 TSN 配置文件路径")
-    parser.add_argument('--yolo_weights', type=str, default="yolov8n.pt",
+    parser.add_argument('--yolo_weights', type=str,
                         help="YOLOv8 模型权重文件路径")
     parser.add_argument('--output_dir', type=str, default="./checkpoints",
                         help="模型保存路径")
